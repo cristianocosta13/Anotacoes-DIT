@@ -44,7 +44,7 @@ São os responsáveis pela tradução das informações entre o núcleo e os ato
 
 ## Injeção de dependências 
 A injeção de dependências ocorre quando os adaptadores são plugados nas portas que lhes são destinadas, ou seja, 
-quando um serviço é diisponibilizado para uso.
+quando um serviço é disponibilizado para uso.
 
 
 > Texto base disponível em <https://medium.com/avenue-tech/arquitetura-hexagonal-com-golang-c344411aa940>. 
