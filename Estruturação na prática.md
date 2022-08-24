@@ -10,5 +10,5 @@
 
    <p> <center> Figura 2: Estruturação de um arquivo na domain. </center> </p>   
    <img src="Figuras/domainAuthor.png" alt=""
-    title="Figura 2: Estruturação de um arquivo na domain." width="300" height="auto"/>
+    title="Figura 2: Estruturação de um arquivo na domain." width="auto" height="400"/>
 
