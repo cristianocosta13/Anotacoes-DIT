@@ -40,7 +40,7 @@ São interfaces pertecentes ao núcleo e define como a comunicação deve ser im
 * ```Portas secundárias```: definições do que o ator secundário deve implementar.
 
 ### Adaptadores
-São os responsáveis pela tradução das informações entre o núcleo e os atores.
+Os adaptadores, representados pelos ```casos de uso``` e pelos ```repositórios```, são os responsáveis pela tradução das informações entre o núcleo e os atores.
 
 ## Injeção de dependências 
 A injeção de dependências ocorre quando os adaptadores são plugados nas portas que lhes são destinadas, ou seja, 
