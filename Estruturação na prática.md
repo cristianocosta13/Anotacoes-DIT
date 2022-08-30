@@ -6,7 +6,13 @@
 <p> <center> Figura 1: Estruturação dos principais diretórios da Arquitetura Hexagonal </center> </p>   
    <img src="Figuras/Estrutura-hexagonal.jpg" alt=""
     title="Figura 1: Estruturação dos principais diretórios da Arquitetura Hexagonal" width="300" height="auto"/>
-    
+
+### docker
+> Contém o ```docker```, o qual armazena o banco de dados em um container, além do arquivo ```init.sql```.
+
+### src
+> Contém todos os diretórios que estruturam o código e fazem ele funcionar, com exceção do diretório ```docker```.
+
 ### Core (núcleo)
 > Contém toda a lógica e as regras do negócio da aplicação, composta por domains e casos de uso, bem como por portas que introduzem os adaptadores, tornando possíel a injeção de dependências. 
 
@@ -18,7 +24,7 @@
     title="Figura 2: Estruturação de um arquivo na domain." width="auto" height="400"/>
 
 #### Interfaces (portas)
-* ```interface```: contém as ```assinaturas dos métodos``` que são usados pelos ```adaptadores``` . Nela, declaramos as portas para o ```service``` (caso de uso) primário (atrelado ao usuário) e para o ```repositórios``` (secundárias).
+* ```interface```: contém as ```assinaturas dos métodos``` que são usados pelos ```adaptadores``` . Nela, declaramos as portas para o ```service``` (caso de uso/portas primárias), o qual é atrelado ao ```usuário```, e para o ```repositórios``` (portas secundárias), o qual é atrelado ao ```núcleo```.
 
    <p> <center> Figura 3: Estruturação de um arquivo na interface. </center> </p>   
    <img src="Figuras/interfaceAuthor.png" alt=""
@@ -32,10 +38,10 @@
     title="Figura 4: Estruturação de um arquivo no services." width="auto" height="400"/>
 
 ### Camadas externas
-> São as camadas que se comunicam com o núcleo da aplicação, embora este desconheça quem os implementa. Isso é essencial, pois torna a aplicação desacoplada e de fácil manipulação e testes. 
+> São as camadas que se comunicam com o núcleo da aplicação, embora este desconheça quem os implementa. Isso é essencial, pois torna a aplicação desacoplada e de fácil manipulação e testes.
 
 #### API
-* ```api```: trata-se da de uma camada de aplicação, que trata e ```manipula``` as requisições do usuário. Nela, declaramos as ```rotas``` e recolhemos as ```requisições do usuário```. Sobre ela, é importante mencionar que tem a função de implementar a ```interface do caso de uso``` a ser trabalhado.
+* ```api```: trata-se de uma camada de aplicação, que trata e ```manipula``` as requisições do usuário. Nela, declaramos as ```rotas``` e recolhemos as ```requisições do usuário```. Sobre ela, é importante mencionar que tem a função de implementar a ```interface do caso de uso``` a ser trabalhada.
  
    <p> <center> Figura 5: Estruturação de um arquivo no repositories. </center> </p>   
    <img src="Figuras/interfaceAuthor.png" alt=""
