@@ -67,3 +67,5 @@
    <p> <center> Figura 8: Estruturação de um arquivo no data. </center> </p>   
    <img src="Figuras/interfaceAuthor.png" alt=""
     title="Figura 8: Estruturação de um arquivo no data." width="auto" height="400"/>
+    
+   > NOTA: não é utilizado, os métodos que constituem os arquivos dessa classe são direcionados para o ```repositories```, pois é nele que tratamos e manipulamos o banco de dados.
