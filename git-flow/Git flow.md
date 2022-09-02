@@ -10,7 +10,7 @@ O git flow trata-se de uma estratégia de organização em projetos que envolve 
 
 ## Estrutura
 
-A esctruturação se dá a partir de 5 branches principais:
+A estruturação se dá a partir de 5 branches principais:
 
 * Master/Main
   * Hotfix
