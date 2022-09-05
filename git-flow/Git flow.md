@@ -18,17 +18,7 @@ A estruturação se dá a partir de 5 branches principais:
 * Devlop
   * Features
 
-As branches master e develop são fixas e irão existir no projeto independente das alterações implementadas. As outras três, no entanto, permanecerão apenas enquanto houver modificações a serem feitas. Quando estiver "tudo ok" no projeto, elas são excluídas. 
-
-### Master/Main
-
-#### Hotfix
-
-#### Releases
-
-### Devlop
-
-#### Features
+As branches master e develop são fixas e irão existir no projeto independente das alterações implementadas. As outras três, no entanto, permanecerão apenas enquanto houver modificações a serem feitas, ou seja, são criadas e excluídas conforme utilizadas. Quando estiver "tudo ok" no projeto, elas são excluídas. 
 
 ## Criando um projeto com git flow
 
