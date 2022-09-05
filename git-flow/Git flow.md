@@ -30,6 +30,28 @@ As branches master e develop são fixas e irão existir no projeto independente 
 
 #### Features
 
+## Criando um projeto com git flow
+
+comandos:
+
+``git flow init``
+
+``git flow feature start <nome>``
+
+``git flow release start <nome>``
+
+``git flow feature finish <nome>``
+
+``git flow release finish <nome>``
+
+Para sair da mensagem de merge ao finalizar a release:
+
+```
+Ctrl+c
+:wq!
+Enter
+```
+
 ### Material de apoio:
 
 > Using git-flow to automate your git branching workflow: https://jeffkreeftmeijer.com/git-flow/
