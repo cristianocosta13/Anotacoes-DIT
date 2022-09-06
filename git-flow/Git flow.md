@@ -28,8 +28,6 @@ A branch Master armazena o histórico da implementação inicial, e a Develop se
     
 Fonte da imagem: [Git Flow: entenda o que é, como e quando utilizar](https://www.alura.com.br/artigos/git-flow-o-que-e-como-quando-utilizar?gclid=Cj0KCQjw39uYBhCLARIsAD_SzMT_8bWIS5VubshZ7py0T_ouxBDqes9PD75bNLbZ_Va8pPgGO3ZLTQAaAvhIEALw_wcB)
 
-## Estrutura
-
 ## Git Flow na prática
 
 comandos:
