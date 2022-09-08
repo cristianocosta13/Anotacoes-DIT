@@ -1,11 +1,13 @@
-# Sistema Acadêmico para Analisar a Discência (SADA)
+# 💡SADA - Sistema Acadêmico para Analisar a Discência
 
-## Objetivos do sistema
+* Entrega: MVP (mínimo produto viável, com o básico funcionando)
+
+## ✅ Objetivos do sistema
 
 * Permitir acesso a estatísticas da discÊncia para outros servidores além dos que já possuem;
 * Ser simples e de fácil manipulação
 
-## Fluxo do sistema
+## ⚙ Fluxo do sistema
 
 * Alimentação de dados:
   * Planilhas de notas e desempenho dos alunos;
@@ -13,13 +15,13 @@
 * Gestão de relatórios:
   * Mostrar estatísticas do alunato.
 
-## Tipos de relatório
+## 📜 Tipos de relatório
 
 * Alerta de faltas (aunos mais faltosos);
 * Notas por matéria por ano;
 * Desempenho de alunos por matéria.
 
-## Requisitos de autorização
+## 🔐 Requisitos de autorização
 
 * Pedagogia;
 * Assistência estudantil;
@@ -27,7 +29,7 @@
 * Coordenação de curso;
 * Pais.
 
-## Requisitos não funcionais
+## 📌 Requisitos não funcionais
 
 * Acessibilidade móvel;
 * Simplicidade.
