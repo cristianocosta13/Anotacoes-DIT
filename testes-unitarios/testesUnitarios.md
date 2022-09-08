@@ -1,10 +1,18 @@
 # O que são testes unitários?
 
-Os testes unitários servem o andamento da menor uniade da aplicação, como méodos ou classes, de maneira que funcionam isoladamente uma vez que precisam funcionar rapidamente. Devido a isso, não podem utilizar nenhum processo ou sistema externo.
+Os testes unitários servem o andamento da menor uniade da aplicação, como méodos ou classes, de maneira que funcionam ``isoladamente`` uma vez que precisam funcionar rapidamente. Devido a isso, não podem utilizar nenhum processo ou sistema externo.
+
+# Como criar
 
 Para desenvolver um teste unitário, você cria códigos (testes unitários) para resolver os problemas que surgem no desenvolvimento do código da aplicação funcional.
 
-Supondo a existência de uma classe pagamento que declara um método cobrar, este recebendo um cliente como parâmetro.
+* Dê nomes que o ajudem a entender os requisitos do código em teste.
+* Certifique-se de que um teste só tenha sucesso porque o código que ele testa está correto. 
+* Assegure-se de que um teste só falha porque o código que ele testa está incorreto.
+* Preze por criar mensagens curtas e significativas de falha que incluam parâmetros de teste relevantes. 
+* Certifique-se de que cada teste possa produzir os resultados corretos (sucesso ou falha) mesmo quando for o único teste que você executar.
+
+Para uma melhor compreensão, suponha a existência de uma classe pagamento que declara um ``método cobrar``, este ``recebendo um cliente`` como parâmetro.
 
 ```
 public class Pagamento {
@@ -34,7 +42,7 @@ public class PagamentoTest {
 }
 ```
 
-### Material de apoio:
+# Material de apoio:
 
 > DevCast - O que são Testes Unitários: [https://www.devmedia.com.br/e-ai-como-voce-testa-seus-codigos/](https://www.devmedia.com.br/e-ai-como-voce-testa-seus-codigos/39478)
 
