@@ -83,8 +83,9 @@ where author.name like 'Mayana%';
 > NOTA: a % desconsidera o que vem em seguida, anteriormente ou em qualquer direção, a depender do local onde é inserida. 
 
 #### Joins 
-> A cláusula ```join``` é responsável por juntar duas ou mais tabelas em um único ```select```, existindo 05 tipos de jois:
-
+* A cláusula ```join``` é responsável por juntar duas ou mais tabelas em um único ```select```, existindo 05 tipos de jois:
+> NOTA: para cda join a estrutura é a mesma, o que muda é a condição de junção de cada uma, isto é, ```inner join ... on```, ```left join ... on``` e assim por diante.
+> 
 ##### Inner join
 > Junta as tabelas referenciadas apenas onde existe relação de colunas. 
 * ```loan l```: emprega um apelido de referência para a tabela.
@@ -102,30 +103,37 @@ from loan l
                     on s.id = l.student_id
 where l.id = 1;
 ```
-https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image002.jpg
+![inner join](https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image002.jpg)
+
 ##### Left join
 > Leva em consideração apenas as colunas da tabela A e omite as colunas da tabela B que não estejam relacionadas com a tabela A. 
-https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image004.png
+
+![left join](https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image004.png)
 
 ##### Right join
 > Leva em consideração apenas as colunas da tabela B e omite as colunas da tabela A que não estejam relacionadas com a tabela B. 
-https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image006.jpg
+
+![right join](https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image006.jpg)
 
 ##### Outer (Full) join
 > Junta tudo de todas as tabelas referenciadas.
-https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image008.jpg
+
+![outer join](https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image008.jpg)
 
 ##### Left Excluding join
 > Omite a tabela B e a interseção dela com a tabela A. 
-https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image010.jpg
+
+![left excluding join](https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image010.jpg)
 
 ##### Right Excluding join
 > Omite a tabela A e a interseção dela com a tabela B. 
-https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image012.jpg
+
+![right excluding join](https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image012.jpg)
 
 ##### Outer Excluding join
 > Omite apenas a interseção entre as tabelas A e B (oposto ao ```inner join```. 
-https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image014.jpg
+
+![outer excluding join](https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image014.jpg)
 
 #### Group By
 ```bash 
