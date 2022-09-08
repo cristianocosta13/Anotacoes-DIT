@@ -76,6 +76,8 @@ Ctrl+c
 Enter
 ```
 
+Agora, para salvar as alterações realizadas no repositório, basta fazer commit e efetuar o push. 
+
 ### Material de apoio:
 
 > Using git-flow to automate your git branching workflow: https://jeffkreeftmeijer.com/git-flow/
