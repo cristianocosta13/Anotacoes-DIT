@@ -21,7 +21,7 @@ CREATE DATABASE LIBRARY;
 * ```default```: padroniza um valor caso não seja atribuído nenhum.
 * ```constraint```: restrição. 
 * ```serial```:
-* 
+
 ```bash 
 create table if not exists book(
     id serial not null
@@ -136,6 +136,28 @@ where l.id = 1;
 ![outer excluding join](https://arquivo.devmedia.com.br/artigos/Fernanda_sallai/sql_join/image014.jpg)
 
 #### Group By
+* A cláusula GROUP BY agrupa linhas baseado em semelhanças entre elas. 
+* No exemplo abaixo, está sendo agrupado a coluna ```name``` da tabela ```author``` e contando quantas vezes ele se repete.
+> NOTA: o group by deve vir acompanhado de funções no select.
+ 
 ```bash 
+select count(*), author.name
+FROM AUTHOR
+    inner join book b on author.id = b.author_id
+where author.id = 2
+group by author.name; 
+```
 
+### Outros comandos
+
+#### Delete
+> Deleta uma coluna da tabela.
+```bash 
+delete from author where id=8;
+```
+
+#### Drop 
+> Deleta uma tabela inteira.
+```bash 
+drop table student;
 ```
